@@ -203,7 +203,7 @@ const Board = () => {
 
     if (starTimer.current > 5 && starArray.length < 1 && !isInStar.current) {
       starTimer.current = 0
-      if (Math.random() > 0.9) {
+      if (Math.random() > 0.75) {
         addItem({getter: starArray, setter: setStarArray})
       } 
     }

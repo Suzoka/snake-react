@@ -5,7 +5,7 @@ const Snake = ({ data, star }) => {
   const getStyle = (dot, i) => {
     let style = {
       transform: `translate(${dot[0]}px, ${dot[1]}px)`,
-      background: `url("${star ? "/img/star-sprite.png" : "/img/skin.jpg"}") ${-10 * i}px 0`
+      background: `url("${star ? "/img/star-sprite.png" : "/img/skin.jpg"}") ${star ? '' : `${-10 * i}px 0`}`
     }
 
     return style

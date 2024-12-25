@@ -50,28 +50,28 @@ export const shake = () => {
 export const reversedControls = (e, direction) => {
   switch (e.keyCode) {
     case 38:
+    case 90:
       if (direction.current !== "UP") {
         direction.current = "DOWN"
       }
-      // Go up
       break
     case 40:
+    case 83:
       if (direction.current !== "DOWN") {
         direction.current = "UP"
       }
-      // Go down
       break
     case 37:
+    case 81:
       if (direction.current !== "LEFT") {
         direction.current = "RIGHT"
       }
-      // Go left
       break
     case 39:
+    case 68:
       if (direction.current !== "RIGHT") {
         direction.current = "LEFT"
       }
-      // Go right
       break
 
     default:
@@ -82,28 +82,28 @@ export const reversedControls = (e, direction) => {
 export const defaultControls = (e, direction) => {
   switch (e.keyCode) {
     case 38:
+    case 90:
       if (direction.current !== "DOWN") {
         direction.current = "UP"
       }
-      // Go up
       break
     case 40:
+    case 83:
       if (direction.current !== "UP") {
         direction.current = "DOWN"
       }
-      // Go down
       break
     case 37:
+    case 81:
       if (direction.current !== "RIGHT") {
         direction.current = "LEFT"
       }
-      // Go left
       break
     case 39:
+    case 68:
       if (direction.current !== "LEFT") {
         direction.current = "RIGHT"
       }
-      // Go right
       break
 
     default:

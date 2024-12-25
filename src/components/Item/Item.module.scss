@@ -3,6 +3,7 @@
   height: 10px;
   position: absolute;
   border: solid 1px white;
+  border-radius: 15px;
 
   &_food {
     background-color: red;
@@ -13,6 +14,7 @@
   }
 
   &_star {
+    border-radius: none;
     background-image: url("../../assets/star.webp");
     background-size: cover;
   }
