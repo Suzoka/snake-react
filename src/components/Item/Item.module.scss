@@ -2,11 +2,11 @@
   width: 10px;
   height: 10px;
   position: absolute;
-  border: solid 1px white;
   border-radius: 15px;
 
   &_food {
-    background-color: red;
+    background-image: url("../../assets/apple.png");
+    background-size: cover;
   }
   
   &_trap {
