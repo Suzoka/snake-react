@@ -1,0 +1,21 @@
+@keyframes starAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -80px 0;
+  }
+}
+
+.snakeDot {
+  // background-color: black;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  z-index: 2;
+}
+
+.star {
+  animation: starAnimation 1s steps(10) infinite;
+}
